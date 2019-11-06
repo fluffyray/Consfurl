@@ -21,10 +21,14 @@
   <ItemGroup>
     <ClInclude Include="inc\allinc.h" />
     <ClInclude Include="inc\conf.h" />
+    <ClInclude Include="inc\consfrul_handle.h" />
     <ClInclude Include="inc\main.h" />
+    <ClInclude Include="inc\window_mgr.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\consfrul_handle.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="window_mgr.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
