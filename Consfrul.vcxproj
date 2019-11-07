@@ -28,7 +28,7 @@
   <ItemGroup>
     <ClCompile Include="src\consfrul_handle.cpp" />
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="window_mgr.cpp" />
+    <ClCompile Include="src\window_mgr.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

@@ -38,7 +38,7 @@
     <ClCompile Include="src\consfrul_handle.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="window_mgr.cpp">
+    <ClCompile Include="src\window_mgr.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

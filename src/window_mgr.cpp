@@ -13,6 +13,8 @@ Window_mgr::Window_mgr(const char* window_name, int x, int y):p_window(SDL_Creat
 	                                                                   WINDOW_WIDE,WINDOW_HIGH,0)),
 	                                                          window_name(window_name),
 	                                                          x(x),
-	                                                          y(y)
+	                                                          y(y),
+	                                                          p_screen_renderer(SDL_CreateRenderer(this->p_window,-1,
+																                                   SDL_RENDERER_ACCELERATED))
 {
 }
