@@ -18,3 +18,4 @@ Window_mgr::Window_mgr(const char* window_name, int x, int y):p_window(SDL_Creat
 																                                   SDL_RENDERER_ACCELERATED))
 {
 }
+

@@ -9,6 +9,7 @@
 #include <SDL_ttf.h>
 #include <iostream>
 #include <math.h>
+#include <stdexcept>
 #endif // ! _WINDOWS_APP
 
 #ifdef _LINUX_APP
