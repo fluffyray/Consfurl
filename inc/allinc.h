@@ -10,6 +10,7 @@
 #include <iostream>
 #include <math.h>
 #include <stdexcept>
+#include <thread>
 #endif // ! _WINDOWS_APP
 
 #ifdef _LINUX_APP

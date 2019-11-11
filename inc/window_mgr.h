@@ -28,23 +28,19 @@ public:
 	 * @exception Throw runtime_error when p_screen_texture = NULL
 	 * @return void
 	 */
-	inline void Transmit_to_screen_texture(SDL_Surface* surface)
-	{
-		this->p_screen_texture = SDL_CreateTextureFromSurface(this->p_screen_renderer,surface);
-		if (this->p_screen_texture == NULL)
-		{
-			throw std::runtime_error("at Consfurl.window_mgr.Transmit_to_screen_texture():\n\
-				                      Can't create texture form the surface");
-		}
-	}
+	void Transmit_to_screen_texture(SDL_Surface* surface);
+
 private:
-	const char* window_name;//!< 
-	int x;
-	int y;
-	SDL_Window*   p_window;
-	SDL_Renderer* p_screen_renderer;
-	SDL_Texture*  p_screen_texture;
-	 
+	const char* window_name;//!< Window title
+	int x; //!< Window x position
+	int y; //!< window y position
+	bool window_active;//!<Whether window is active.If not, it means window is going to be destroyed
+	SDL_Window*   p_window; //!< Pointer to SDL_Window instance 
+	SDL_Renderer* p_screen_renderer; //!< Pointer to SDL_Window instance 
+	SDL_Texture*  p_screen_texture;//!< Pointer to SDL_Window instance
+	std::thread screen_rend_T;
+	
+	static void Sreen_rending(Window_mgr* window_mgr);
 };
 
 #endif // !WINDOW_MGR_H
