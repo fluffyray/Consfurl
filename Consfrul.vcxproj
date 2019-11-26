@@ -20,14 +20,20 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="inc\allinc.h" />
+    <ClInclude Include="inc\camera.h" />
     <ClInclude Include="inc\conf.h" />
     <ClInclude Include="inc\consfrul_handle.h" />
     <ClInclude Include="inc\main.h" />
+    <ClInclude Include="inc\session.h" />
+    <ClInclude Include="inc\session_obj.h" />
     <ClInclude Include="inc\window_mgr.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\camera.cpp" />
     <ClCompile Include="src\consfrul_handle.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\session.cpp" />
+    <ClCompile Include="src\session_obj.cpp" />
     <ClCompile Include="src\window_mgr.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

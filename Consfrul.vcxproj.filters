@@ -30,6 +30,15 @@
     <ClInclude Include="inc\window_mgr.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="inc\camera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\session.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\session_obj.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -39,6 +48,15 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\window_mgr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\camera.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\session.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\session_obj.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
