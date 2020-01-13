@@ -19,7 +19,7 @@ public:
 	 * @param window_name The title which will be shown at the bar
 	 * @param x The x positon of window
 	 * @param y The y positon of window
-	 * @exception Throws runtime_error when any member failed to initialize
+	 * @exception Throws runtime_error when any member failed to get initialized
 	 */
 	explicit Window_mgr(const char* window_name,int x,int y);
 	
