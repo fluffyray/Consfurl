@@ -1,6 +1,10 @@
 #include "session.h"
 
-Session::Session():Session("NONE_NAME",0,0)
+Session::Session():Session("NONE_NAME", WINDOW_WIDE, WINDOW_HIGH)
+{
+}
+
+Session::Session(std::string session_ID):Session(session_ID,WINDOW_WIDE,WINDOW_HIGH)
 {
 }
 
@@ -42,7 +46,7 @@ Session_obj& Session::add_Session_obj(Session_obj& session_obj)
 Session_obj& Session::remove_Session_obj(Session_obj& session_obj)
 {
 	if (session_obj.get_Index_in_Session() < 0) {
-		std::cout << "Warning: " <<session_obj.get_Obj_ID << "is not a obj in the session" << std::endl;
+		std::cout << "Warning: " <<session_obj.get_Obj_ID() << "is not a obj in the session" << std::endl;
 	}
 	else {
 		this->registered_session_obj.at(session_obj.get_Index_in_Session()) = nullptr;

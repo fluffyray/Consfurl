@@ -11,7 +11,7 @@ public:
 	//!< Without name defined, title of the window created by this fuction will be "No_Name"
 	Window_mgr();
 	~Window_mgr();
-	//!< Without position defined, window will be shown at the central position of screen
+	//!< Without position defined, the window will be shown at the central position of computer screen
 	explicit Window_mgr(const char* window_name);
 	
     /**
@@ -35,7 +35,7 @@ private:
 	const char* window_name;//!< Window title
 	int x; //!< Window x position
 	int y; //!< window y position
-	bool window_active; //!<Whether window is active.If not, it means window is going to be destroyed
+	bool window_active; //!<Whether window is active.If not, it means the window is going to be destroyed
 	SDL_Window*   p_window; //!< Pointer to SDL_Window instance 
 	SDL_Renderer* p_screen_renderer; //!< Pointer to SDL_Renderer instance 
 	SDL_Texture*  p_screen_texture;//!< Pointer to SDL_Texture instance of screen_renderer

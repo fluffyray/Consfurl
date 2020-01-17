@@ -12,7 +12,7 @@ public:
 	bool operator == (Session_obj session_obj);
 	int pos_x;
 	int pos_y;
-	int& get_Index_in_Session();
+	int get_Index_in_Session();
 	void disable_Index_in_Session();
 	std::string get_Obj_ID();
 private:

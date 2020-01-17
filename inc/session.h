@@ -10,6 +10,7 @@ class Session
 {
 public:
 	Session();
+	Session(std::string);
 	Session(std::string session_ID,int size_W,int size_H);
 
 	~Session();

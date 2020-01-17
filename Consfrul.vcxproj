@@ -98,7 +98,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\Lib\SDL2_mixer-2.0.2\include;D:\Lib\SDL2_ttf-2.0.14\include;D:\Lib\SDL2_image-2.0.3\include;D:\Lib\lua-5.3.5\src;D:\Lib\SDL2-2.0.10\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>inc;D:\Lib\SDL2_mixer-2.0.2\include;D:\Lib\SDL2_ttf-2.0.14\include;D:\Lib\SDL2_image-2.0.3\include;D:\Lib\lua-5.3.5\src;D:\Lib\SDL2-2.0.10\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
