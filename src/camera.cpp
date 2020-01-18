@@ -1,6 +1,6 @@
 #include "camera.h"
 
-Camera::Camera()
+Camera::Camera():Camera(0,0)
 {
 }
 
@@ -19,5 +19,17 @@ Camera::~Camera()
 
 SDL_Surface* Camera::capture(Session* session)
 {
-	return nullptr;
+	switch (this -> camera_shape)
+	{
+	case Camera_shape::SQUARE_CM:
+
+		break;
+	case Camera_shape::CIRCLE_CM:
+		break;
+	default:
+		throw std::runtime_error("at Consfrul.Camera.capture()/nNo camera shape specified");
+		return nullptr;
+		break;
+	}
+	
 }

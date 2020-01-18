@@ -2,11 +2,21 @@
 #define  CAMERA_H
 #include "allinc.h"
 #include "session.h"
+
+/**
+ * @brief Decide how the shape is like of that camera captured
+ */
+typedef enum class Camera_shape
+{
+	SQUARE_CM,
+	CIRCLE_CM
+};
+
 class Camera
 {
 public:
 	Camera();
-	Camera(int position_x,int position_y,int size_w,int size_h,Camera_shape camera_shape);
+	Camera(int position_x,int position_y,int size_w = WINDOW_WIDE,int size_h = WINDOW_HIGH,Camera_shape camera_shape = Camera_shape::SQUARE_CM);
 	~Camera();
 
 private:
@@ -20,13 +30,4 @@ private:
 	SDL_Surface* capture(Session* session);
 };
 
-/**
- * @brief Decide how the shape is like of that camera captured
- */
-typedef enum
-{
-	SQUARE_CM,
-	CIRCLE_CM
-}Camera_shape;
 #endif // ! CAMERA_H
-
